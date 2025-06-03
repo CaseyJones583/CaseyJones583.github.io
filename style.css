@@ -1,19 +1,20 @@
 body {
-    background: rgb(125, 198, 205);
-    color: rgb(255, 255, 255);
+    background: #ffffff url(https://preview.redd.it/54obu7eenrq61.gif?width=640&crop=smart&auto=webp&s=7502c2dc2844548527d64eff5308158ee9852682) center center/cover repeat;
     padding: 10px;
+    color: rgb(255, 255, 255)
     font-family: Arial, sans-serif;
-}
+   
 
 #all-contents {
     max-width: 800px;
     margin: auto;
+    
 }
 
 /* navigation menu */
 nav {
     background: rgb(41, 67, 239);
-    filter: drop-shadow(0px 12px 9px #00108a);
+    filter: drop-shadow(0px 12px 9px #000000);
     margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -21,7 +22,6 @@ nav {
     justify-content: space-between;
     border-radius: 10px;
     margin-bottom: 10px;
-
 }
 
 h1 {
@@ -62,11 +62,12 @@ a {
 /* main container area beneath menu */
 main {
     background:  rgb(41, 67, 239);
-    filter: drop-shadow(0px 12px 9px #00108a);
+    filter: drop-shadow(0px 12px 9px #000000);
     border-radius: 10px;
      margin-bottom: 10px;
     display: flex;
     margin-top: 20px;
+    color:#ffffff
 }
 
 .sidebar {
