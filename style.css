@@ -23,7 +23,7 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
     flex: 1;
     margin: 0;
 }
@@ -76,3 +76,4 @@ main {
 h2, h3 {
     margin: 0px;
 }
+.douglas {color: rgb(45,45,45);}
