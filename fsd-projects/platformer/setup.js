@@ -92,7 +92,7 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "images/collectables/database.png" },
+  database: { image: "https://images.jammable.com/voices/custom-fred-durst-limp-bizkit/a26354c8-28f9-4f4f-8224-c83b938038c8.png" },
   diamond: { image: "images/collectables/diamond-head.png" },
   grace: { image: "images/collectables/grace-head.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
