@@ -75,8 +75,8 @@ let cannons = [];
 const cannonWidth = 118;
 const cannonHeight = 80;
 let projectiles = [];
-const defaultProjectileWidth = 24;
-const defaultProjectileHeight = defaultProjectileWidth;
+const defaultProjectileWidth = 50;
+const defaultProjectileHeight = 50;
 const collectableWidth = 40;
 const collectableHeight = 40;
 let collectables = [];
@@ -92,7 +92,7 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "https://images.jammable.com/voices/custom-fred-durst-limp-bizkit/a26354c8-28f9-4f4f-8224-c83b938038c8.png" },
+  database: { image: "https://purepng.com/public/uploads/large/purepng.com-cookiecookieamericandelicioussnacksweetyummybiscuit-215258865264pxyk.png" },
   diamond: { image: "images/collectables/diamond-head.png" },
   grace: { image: "images/collectables/grace-head.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },

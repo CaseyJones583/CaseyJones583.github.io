@@ -1,9 +1,12 @@
 body {
   margin: 0px;
+  color: 
 }
 
 canvas {
-  background-color: lightblue;
+  background-color: rgb(0, 0, 0);
+  background-image: url("https://cdn.mos.cms.futurecdn.net/9C64Ni92Xkx59rFnGpnVGa.jpg");
+
   margin: 20px;
 }
 

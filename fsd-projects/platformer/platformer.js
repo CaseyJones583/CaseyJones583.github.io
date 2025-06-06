@@ -41,6 +41,8 @@ createPlatform(300, 250, 100, 20);
 createPlatform(100, 150, 100, 20);
 createPlatform(400, 200, 100, 20);
 createPlatform(600, 200, 100, 20);
+createPlatform(800, 200, 100, 20);
+createPlatform(1000, 200, 100, 20);
 
 
 
@@ -51,6 +53,11 @@ createCollectable("database", 232.5, 375);
 createCollectable("database", 232.5, 275);
 createCollectable("database", 232.5, 175);
 createCollectable("database", 232.5, 75);
+createCollectable("database", 532.5, 75);
+createCollectable("database", 732.5, 75);
+createCollectable("database", 932.5, 75);
+
+
 
 
 
@@ -58,7 +65,7 @@ createCollectable("database", 232.5, 75);
 
     
     // TODO 4 - Create Cannons
-createCannon("bottom", 200, 1000);
+createCannon("bottom", 172.5, 1000);
 
     
     
