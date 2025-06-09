@@ -30,36 +30,48 @@ $(function () {
     toggleGrid();
 
     // TODO 2 - Create Platforms
-    createPlatform(100, 100, 20, 500);
-    createPlatform(380, 200, 20, 700);
-    createPlatform(300, 650, 100, 20);
-    createPlatform(100, 550, 100, 20);
-    createPlatform(300, 450, 100, 20);
-    createPlatform(100, 350, 100, 20);
-    createPlatform(300, 250, 100, 20);
-    createPlatform(100, 150, 100, 20);
-    createPlatform(400, 200, 100, 20);
-    createPlatform(600, 200, 100, 20);
-    createPlatform(800, 200, 100, 20);
-    createPlatform(1000, 200, 100, 20);
+    
+    createPlatform(700, 600, 100, 200);
+    createPlatform(600, 700, 100, 100);
+    createPlatform(800, 700, 100, 100);
+    createPlatform(500, 475, 100, 25);
+    createPlatform(400, 400, 100, 100);
+    createPlatform(900, 475, 100, 25);
+    createPlatform(1000, 400, 100, 100);
+    createPlatform(800, 350, 100, 25);
+    createPlatform(600, 350, 100, 25);
+    createPlatform(700, 250, 100, 25);
+    createPlatform(500, 150, 100, 25);
+    createPlatform(900, 150, 100, 25);
+    createPlatform(300, 200, 100, 100);
+    createPlatform(200, 200, 100, 25);
+    createPlatform(1100, 200, 100, 100);
+    createPlatform(1200, 200, 100, 25);
+
+
+
+
 
     // TODO 3 - Create Collectables
-    createCollectable("database", 232.5, 575);
-    createCollectable("database", 232.5, 475);
-    createCollectable("database", 232.5, 375);
-    createCollectable("database", 232.5, 275);
-    createCollectable("database", 232.5, 175);
-    createCollectable("database", 232.5, 75);
-    createCollectable("database", 532.5, 75);
-    createCollectable("database", 732.5, 75);
-    createCollectable("database", 932.5, 75);
+    createCollectable("database", 732.5, 523.5);
+    createCollectable("database", 532.5, 423.5);
+    createCollectable("database", 932.5, 423.5);
+    createCollectable("database", 832.5, 300.5);
+    createCollectable("database", 632.5, 300.5);
+    createCollectable("database", 732.5, 200.5);
+    createCollectable("database", 532.5, 100.5);
+    createCollectable("database", 932.5, 100.5);
+    createCollectable("database", 232.5, 132.5);
+    createCollectable("database", 1232.5, 132.5);
+    
 
     // TODO 4 - Create Cannons
-    createCannon("bottom", 172.5, 1000);
-    createCannon("bottom", 472.5, 1000);
-    createCannon("bottom", 672.5, 1000);
-    createCannon("bottom", 872.5, 1000);
-    createCannon("bottom", 1072.5, 1000);
+    createCannon("bottom", 673.5, 1000);
+    createCannon("left", 273.5, 1000);
+    createCannon("right", 123.5, 1000);
+
+
+
 
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
