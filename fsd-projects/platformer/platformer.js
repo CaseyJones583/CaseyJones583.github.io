@@ -27,26 +27,26 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    toggleGrid();
+    
 
     // TODO 2 - Create Platforms
     
-    createPlatform(700, 600, 100, 200);
-    createPlatform(600, 700, 100, 100);
-    createPlatform(800, 700, 100, 100);
-    createPlatform(500, 475, 100, 25);
-    createPlatform(400, 400, 100, 100);
-    createPlatform(900, 475, 100, 25);
-    createPlatform(1000, 400, 100, 100);
-    createPlatform(800, 350, 100, 25);
-    createPlatform(600, 350, 100, 25);
-    createPlatform(700, 250, 100, 25);
-    createPlatform(500, 150, 100, 25);
-    createPlatform(900, 150, 100, 25);
-    createPlatform(300, 200, 100, 100);
-    createPlatform(200, 200, 100, 25);
-    createPlatform(1100, 200, 100, 100);
-    createPlatform(1200, 200, 100, 25);
+    createPlatform(700, 600, 100, 200, "#d9722f" )
+    createPlatform(600, 700, 100, 100, "#d9722f" )
+    createPlatform(800, 700, 100, 100, "#d9722f" )
+    createPlatform(500, 475, 100, 25, "#d9722f" )
+    createPlatform(400, 400, 100, 100, "#d9722f" )
+    createPlatform(900, 475, 100, 25, "#d9722f" )
+    createPlatform(1000, 400, 100, 100, "#d9722f" )
+    createPlatform(800, 350, 100, 25, "#d9722f" )
+    createPlatform(600, 350, 100, 25, "#d9722f" )
+    createPlatform(700, 250, 100, 25, "#d9722f" )
+    createPlatform(500, 150, 100, 25, "#d9722f" )
+    createPlatform(900, 150, 100, 25, "#d9722f" )
+    createPlatform(300, 200, 100, 100, "#d9722f" )
+    createPlatform(200, 200, 100, 25, "#d9722f" )
+    createPlatform(1100, 200, 100, 100, "#d9722f" )
+    createPlatform(1200, 200, 100, 25, "#d9722f" )
 
 
 
