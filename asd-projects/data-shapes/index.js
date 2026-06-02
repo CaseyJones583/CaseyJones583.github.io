@@ -43,7 +43,7 @@ var shape = {
 }
   // TODO 2: add a new property to all data shapes
   
-
+  
   // TODO 3-a: add a function that handles the static display type
   
 
