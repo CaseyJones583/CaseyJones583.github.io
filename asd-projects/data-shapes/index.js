@@ -46,13 +46,13 @@ dataShapes.push(shape);
   for (i = 0; i < dataShapes.length; i++) {
     currentShape = dataShapes[i]
     if (currentShape.color === "red") {
-      currentShape.goodBehavior = "bounce"
+      currentShape.goodBehavior = "bounce";
     }
     else if (currentShape.color === "blue") {
-      goodBehavior = "blink"
+      currentShape.goodBehavior = "blink";
     }
     else {
-      goodBehavior = "spin"
+      currentShape.goodBehavior = "spin";
     }
   }
   
@@ -61,9 +61,13 @@ dataShapes.push(shape);
     setBackgroundWithObject(data);
     animationDetails.displayType = 1;
   }
-handleStatic(dataShapes[currentIndex]);
+
+
   // TODO 4-a: add a function that handles the good display type
-  
+  function handleGood(color, shape, repeat) {
+    setBackgroundWithSimple(color, shape, repeat);
+    animationDetails.displayType = 2;
+  }
 
   // TODO 5-a: add a function that handles the bad display type
   
@@ -74,11 +78,13 @@ handleStatic(dataShapes[currentIndex]);
 
   function staticDisplay() {
     // TODO 3-b: call your handleStatic function
-    
+    handleStatic(dataShapes[currentIndex]);
   }
 
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
+    var currentShapeData = Shapes[currentIndex];
+    handleGood(currentShape.color, currentShape.shape, currentShape.repeat);
     
   }
 
