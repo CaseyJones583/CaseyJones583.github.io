@@ -57,7 +57,7 @@ snake.head = snake.body[0]; // Mark the first segment as the head
 makeApple()
 
   // TODO 6, Part 1: Initialize the interval
-
+updateInterval = setInterval(update, 100);
 
 }
 
@@ -72,7 +72,17 @@ makeApple()
 function update() {
   // TODO 6, Part 2: Fill in the update function's code block
 
+if (started) {
+  moveSnake();
+}
 
+if (hasHitWall() || hasCollidedWithSnake()) {
+  endGame();
+}
+
+if (hasCollidedWithApple()) {
+  handleAppleCollision();
+}
 
 
 }
@@ -86,8 +96,18 @@ function checkForNewDirection(event) {
   */
 
   if (activeKey === KEY.LEFT) {
-    snake.head.direction = "left";
+  snake.head.direction = "left";
   }
+  else if (activeKey === KEY.RIGHT) {
+  snake.head.direction = "right";
+  }
+  else if (activeKey === KEY.UP) {
+  snake.head.direction = "up";
+  }
+  else if (activeKey === KEY.DOWN) {
+  snake.head.direction = "down";
+  }
+
 
   // FILL IN THE REST
 
@@ -268,7 +288,8 @@ snake.tail = snakeSquare;
 */
 function handleKeyDown(event) {
   // TODO 7: make the handleKeyDown function register which key is pressed
-
+activeKey = event.which;
+console.log(activeKey);
 
   // If a valid direction key is pressed, start the game
   if (
