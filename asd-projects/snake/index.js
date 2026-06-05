@@ -124,7 +124,14 @@ function moveSnake() {
     column/row properties. 
   */
 
+for (var i = snake.body.length -1; i > 0; i--) {
+    var currentSnakeSquare = snake.body[i];
+    var snakeSquareInFront = snake.body[i - 1];
 
+    moveBodyAToBodyB(currentSnakeSquare, snakeSquareInFront);
+
+    repositionSquare(currentSnakeSquare);
+}
 
 
 
@@ -157,14 +164,10 @@ repositionSquare(snake.head)
 
 function moveBodyAToBodyB(bodyA, bodyB) {
   bodyA.row = bodyB.row; 
-  bodyA.col = bodyB.col; 
-  bodyA.direction = bodyB.direction;
+  bodyA.column = bodyB.column; 
+ 
 }
-console.log("Moving body A to body B...");
-setTimeout(() => {
-  moveBodyAToBodyB(snake.body[1], snake.head);
-  repositionSquare(snake.body[1]);
-}, 2_000);
+
 
 
 function hasHitWall() {
