@@ -14,7 +14,7 @@ var score = 0; // variable to keep track of the score
 var started = false; // variable to keep track of whether the game has started
 
 // TODO 4, Part 1: Create the apple variable
-const apple = {};
+var apple = {};
 
 // TODO 5, Part 1: Create the snake variable
 const snake = {};
@@ -54,7 +54,7 @@ makeSnakeSquare(10, 9); // Create a second square to the left of the first
 makeSnakeSquare(10, 8); // Create a third square to the left of the second
 snake.head = snake.body[0]; // Mark the first segment as the head
   // TODO 4, Part 3: initialize the apple
-makeApple()
+makeApple();
 
   // TODO 6, Part 1: Initialize the interval
 updateInterval = setInterval(update, 100);
@@ -178,7 +178,12 @@ function hasHitWall() {
     HINT: What will the row and column of the snake's head be if this were the case?
   */
 
-
+if(snake.head.row < 0 || snake.head.row >= ROWS){
+  return true
+}
+if(snake.head.column < 0| snake.head.column >= COLUMNS){
+  return true
+}
 
   return false;
 }
@@ -191,9 +196,13 @@ function hasCollidedWithApple() {
     HINT: Both the apple and the snake's head are aware of their own row and column
   */
 
-
-
+if (snake.head.row === apple.row && snake.head.column === apple.column){
+  return true;
+}
+else{
   return false;
+}
+return false;
 }
 
 function handleAppleCollision() {
