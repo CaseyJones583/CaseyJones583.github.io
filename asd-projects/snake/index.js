@@ -365,7 +365,7 @@ function getRandomAvailablePosition() {
   while (!spaceIsAvailable) {
     randomPosition.column = Math.floor(Math.random() * COLUMNS);
     randomPosition.row = Math.floor(Math.random() * ROWS);
-    spaceIsAvailable = true;
+    spaceIsAvailable = true;}
 
     /*
       TODO 14: After generating the random position determine if that position is
@@ -375,10 +375,10 @@ function getRandomAvailablePosition() {
 
 
 
-  }
 
-  return randomPosition;
+return randomPosition;
 }
+
 
 function calculateHighScore() {
   // retrieve the high score from session storage if it exists, or set it to 0
