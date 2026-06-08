@@ -14,7 +14,7 @@ var score = 0; // variable to keep track of the score
 var started = false; // variable to keep track of whether the game has started
 
 // TODO 4, Part 1: Create the apple variable
-var apple = {};
+const apple = {};
 
 // TODO 5, Part 1: Create the snake variable
 const snake = {};
@@ -54,7 +54,7 @@ makeSnakeSquare(10, 9); // Create a second square to the left of the first
 makeSnakeSquare(10, 8); // Create a third square to the left of the second
 snake.head = snake.body[0]; // Mark the first segment as the head
   // TODO 4, Part 3: initialize the apple
-makeApple();
+makeApple()
 
   // TODO 6, Part 1: Initialize the interval
 updateInterval = setInterval(update, 100);
@@ -177,16 +177,17 @@ function hasHitWall() {
     
     HINT: What will the row and column of the snake's head be if this were the case?
   */
-
-if(snake.head.row < 0 || snake.head.row >= ROWS){
-  return true
-}
-if(snake.head.column < 0| snake.head.column >= COLUMNS){
-  return true
-}
-
+const isOutOfBoundsRow = snake.head.row < 0 || snake.head.row >= ROWS;
+  const isOutOfBoundsColumn = snake.head.column < 0 || snake.head.column >= COLUMNS;
+ if (isOutOfBoundsRow || isOutOfBoundsColumn) {
+    return true;
+  }
+  
   return false;
 }
+
+
+ 
 
 function hasCollidedWithApple() {
   /* 
@@ -204,6 +205,7 @@ else{
 }
 return false;
 }
+ 
 
 function handleAppleCollision() {
   // increase the score and update the score DOM element
@@ -229,7 +231,7 @@ function hasCollidedWithSnake() {
     head and each part of the snake's body also knows its own row and column.
   */
 
-  const head = snake.body[0];
+const head = snake.body[0];
 for (let i = 1; i < snake.body.length; i++) {
   var square = snake.body[i]
   if (head.row === square.row && head.column === square.column){
@@ -371,16 +373,6 @@ function getRandomAvailablePosition() {
       spaceIsAvailable to false so that a new position is generated.
     */
 
-var spaceIsAvailable;
-var randomPosition = {};
-
-while (!spaceIsAvailable) {
-  randomPosition.column = Math.floor(Math.random() * COLUMNS);
-  randomPosition.row = Math.floor(Math.random() * ROWS);
-  spaceIsAvailable = true;
-}
-
-return randomPosition;
 
 
   }
