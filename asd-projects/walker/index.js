@@ -109,23 +109,23 @@ if (event.which === KEY.DOWN) {
     $("#walker").css("left", walker.x);
     $("#walker").css("top", walker.y);
   }
-}
 
-  function wallCollision() {
-    // left border
+   function wallCollision() {
+    // Left boundary
     if (walker.x < 0) {
         walker.x -= walker.speedX;
     }
-    // top border
-    if (walker.y < 0) {
-        walker.y -= walker.speedY;
-    }
-    // right border
+    // Right boundary
     if (walker.x > $("#board").width()) {
         walker.x -= walker.speedX;
     }
-    // bottom border
+    // Top boundary
+    if (walker.y < 0) {
+        walker.y -= walker.speedY;
+    }
+    // Bottom boundary
     if (walker.y > $("#board").height()) {
         walker.y -= walker.speedY;
     }
+}
 }
