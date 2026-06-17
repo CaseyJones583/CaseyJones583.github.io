@@ -116,7 +116,7 @@ if (event.which === KEY.DOWN) {
         walker.x -= walker.speedX;
     }
     // Right boundary
-    if (walker.x > $("#board").width()) {
+    if (walker.x > $("#board").width() - $("#walker").width()) {
         walker.x -= walker.speedX;
     }
     // Top boundary
@@ -124,7 +124,7 @@ if (event.which === KEY.DOWN) {
         walker.y -= walker.speedY;
     }
     // Bottom boundary
-    if (walker.y > $("#board").height()) {
+    if (walker.y > $("#board").height() - $("#walker").height()) {
         walker.y -= walker.speedY;
     }
 }
